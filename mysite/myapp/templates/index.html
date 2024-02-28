@@ -6,6 +6,7 @@
             {% for item in items %}
                 <a href="{% url 'myapp:detail' item.id %}">
                     ID: {{item.id}} | სახელი: {{item.name}} | ფასი: {{item.price}} | აღწერა: {{item.description}} <br/>
+                    <img src="{{item.image.url}}" alt="">
                 </a>
             {% endfor %}
         </h4>
